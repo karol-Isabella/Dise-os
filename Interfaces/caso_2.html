@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakingo Bakery</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-slate-800 font-sans m-0 p-0 overflow-x-hidden">
+
+    <!-- 1. NAVBAR SUPERIOR -->
+    <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+        <div class="w-full px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="text-2xl font-black text-[#9b2226] tracking-wider">
+                Dakingo
+            </div>
+
+            <!-- Buscador -->
+            <div class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2 w-1/3 border border-gray-200">
+                <i data-lucide="search" class="w-4 h-4 text-gray-400 mr-2"></i>
+                <input type="text" placeholder="Search" class="bg-transparent text-xs w-full focus:outline-none">
+                <i data-lucide="sliders-horizontal" class="w-4 h-4 text-gray-400 ml-2"></i>
+            </div>
+
+            <!-- Login / Signup -->
+            <div class="flex items-center gap-4">
+                <a href="#" class="flex items-center gap-2 text-xs font-bold text-gray-700 hover:text-[#9b2226]">
+                    <i data-lucide="shopping-cart" class="w-4 h-4"></i> Login/Signup
+                </a>
+            </div>
+        </div>
+
+        <!-- Submenú de Categorías -->
+        <nav class="w-full bg-white border-t border-gray-100 px-6 py-3 flex items-center justify-center gap-8 text-xs font-bold overflow-x-auto">
+            <a href="#" class="text-gray-700 hover:text-[#9b2226] whitespace-nowrap">Cakes</a>
+            <a href="#" class="text-gray-700 hover:text-[#9b2226] whitespace-nowrap">Theme Cakes</a>
+            <a href="#" class="text-gray-700 hover:text-[#9b2226] whitespace-nowrap">Desserts</a>
+            <a href="#" class="text-gray-700 hover:text-[#9b2226] whitespace-nowrap">Birthday</a>
+            <a href="#" class="text-gray-700 hover:text-[#9b2226] whitespace-nowrap">Hampers</a>
+            <a href="#" class="text-gray-700 hover:text-[#9b2226] whitespace-nowrap">Anniversary</a>
+            <a href="#" class="text-gray-700 hover:text-[#9b2226] whitespace-nowrap">Occasions</a>
+            <a href="#" class="bg-[#9b2226] text-white px-5 py-2 rounded-full hover:bg-red-800 transition-all whitespace-nowrap">ORDER NOW</a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL FULL WIDTH -->
+    <main class="w-full flex flex-col">
+
+        <!-- 2. SECCIÓN HERO (ROJA) -->
+        <section class="w-full bg-[#9b2226] text-white py-12 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+            <!-- Imagen grande izquierda -->
+            <div class="relative flex items-center justify-center mb-8 md:mb-0">
+                <div class="w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-white/30 p-3 flex items-center justify-center bg-black/10">
+                    <img src="img/4.png" class="w-full h-full object-cover rounded-full shadow-2xl">
+                </div>
+            </div>
+
+            <!-- Texto central Hero -->
+            <div class="text-center md:text-left max-w-lg z-10">
+                <h1 class="text-3xl md:text-5xl font-black uppercase leading-tight tracking-wide">
+                    DECADENT CHOCOLATE BLISS!
+                </h1>
+                <p class="mt-4 text-sm md:text-base text-white/90">
+                    Satisfy Your Sweet Cravings with our artisan recipes.
+                </p>
+                <div class="mt-6 inline-block bg-black/30 border border-white/20 px-6 py-3 rounded-full">
+                    <span class="text-xs tracking-wider uppercase block text-orange-300 font-bold">Special Offer!</span>
+                    <span class="text-xl font-black">SAVE 20%</span>
+                </div>
+            </div>
+
+            <!-- Miniaturas derechas -->
+            <div class="hidden lg:flex flex-col gap-4">
+                <div class="w-24 h-24 rounded-full border-2 border-white/50 overflow-hidden shadow-lg bg-white/10">
+                    <img src="img/5.png" class="w-full h-full object-cover">
+                </div>
+                <div class="w-24 h-24 rounded-full border-2 border-white/50 overflow-hidden shadow-lg bg-white/10">
+                    <img src="img/6.png" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN MENÚ Y CATEGORÍAS -->
+        <section class="w-full py-12 px-6 md:px-16 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-2xl font-black text-slate-900">Menu</h2>
+                <p class="text-xs text-gray-500 mt-1 mb-8">What will you wish for?</p>
+
+                <!-- Iconos de Categoría -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:border-[#9b2226] transition-all cursor-pointer">
+                        <div class="w-12 h-12 bg-red-100 text-[#9b2226] rounded-full flex items-center justify-center mb-3">
+                            <i data-lucide="cake" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-xs uppercase">Classic</span>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:border-[#9b2226] transition-all cursor-pointer">
+                        <div class="w-12 h-12 bg-red-100 text-[#9b2226] rounded-full flex items-center justify-center mb-3">
+                            <i data-lucide="utensils" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-xs uppercase">Gourmet</span>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:border-[#9b2226] transition-all cursor-pointer">
+                        <div class="w-12 h-12 bg-red-100 text-[#9b2226] rounded-full flex items-center justify-center mb-3">
+                            <i data-lucide="coffee" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-xs uppercase">Desserts</span>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-gray-50 rounded-2xl border border-gray-100 hover:border-[#9b2226] transition-all cursor-pointer">
+                        <div class="w-12 h-12 bg-red-100 text-[#9b2226] rounded-full flex items-center justify-center mb-3">
+                            <i data-lucide="cookie" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-bold text-xs uppercase">Cookies</span>
+                    </div>
+                </div>
+
+                <!-- Bestsellers Header -->
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-xl font-black text-slate-900">Bestsellers from Across the Country</h3>
+                    <a href="#" class="bg-[#9b2226] text-white font-bold px-5 py-2 rounded-full text-xs hover:bg-red-800 transition-all">VIEW ALL</a>
+                </div>
+
+                <!-- Tarjetas de Productos -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <!-- Producto 1 -->
+                    <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+                        <img src="img/5.png" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <h4 class="font-bold text-sm">Rich Chocolate Truffle Cake</h4>
+                        <p class="text-xs text-gray-400 mt-1">₹500 • 500g</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-black text-slate-900">₹500</span>
+                            <button class="bg-[#9b2226] text-white p-2 rounded-full hover:bg-red-800"><i data-lucide="plus" class="w-4 h-4"></i></button>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+                        <img src="img/6.png" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <h4 class="font-bold text-sm">Choco Chip Truffle Cake</h4>
+                        <p class="text-xs text-gray-400 mt-1">₹500 • 500g</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-black text-slate-900">₹509</span>
+                            <button class="bg-[#9b2226] text-white p-2 rounded-full hover:bg-red-800"><i data-lucide="plus" class="w-4 h-4"></i></button>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+                        <img src="img/7.png" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <h4 class="font-bold text-sm">Tropical Fruit N Almond Cake</h4>
+                        <p class="text-xs text-gray-400 mt-1">₹500 • 500g</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-black text-slate-900">₹509</span>
+                            <button class="bg-[#9b2226] text-white p-2 rounded-full hover:bg-red-800"><i data-lucide="plus" class="w-4 h-4"></i></button>
+                        </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between hover:shadow-md transition-all">
+                        <img src="img/8.png" class="w-full h-40 object-cover rounded-xl mb-4">
+                        <h4 class="font-bold text-sm">Rich Butterscotch Crunch Cake</h4>
+                        <p class="text-xs text-gray-400 mt-1">₹399 • 500g</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-black text-slate-900">₹399</span>
+                            <button class="bg-[#9b2226] text-white p-2 rounded-full hover:bg-red-800"><i data-lucide="plus" class="w-4 h-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN OUR PROMISE Y GALERÍA -->
+        <section class="w-full py-12 px-6 md:px-16 bg-gray-50 border-t border-gray-200">
+            <div class="max-w-7xl mx-auto">
+                <h3 class="text-2xl font-black text-slate-900">Our Promise</h3>
+                <p class="text-xs text-gray-500 mt-1 mb-8">There's no secret spell - only honest work!</p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Izquierda: Promesas y Ticket Mágico -->
+                    <div class="flex flex-col gap-6">
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-white p-6 rounded-2xl shadow-sm border border-gray-200 text-center">
+                            <div>
+                                <i data-lucide="truck" class="w-6 h-6 mx-auto text-[#9b2226] mb-2"></i>
+                                <span class="text-[10px] font-bold block">ON-TIME DELIVERY</span>
+                            </div>
+                            <div>
+                                <i data-lucide="box" class="w-6 h-6 mx-auto text-[#9b2226] mb-2"></i>
+                                <span class="text-[10px] font-bold block">510+ DESIGNS</span>
+                            </div>
+                            <div>
+                                <i data-lucide="award" class="w-6 h-6 mx-auto text-[#9b2226] mb-2"></i>
+                                <span class="text-[10px] font-bold block">2 CR+ ORDERS</span>
+                            </div>
+                            <div>
+                                <i data-lucide="sparkles" class="w-6 h-6 mx-auto text-[#9b2226] mb-2"></i>
+                                <span class="text-[10px] font-bold block">BAKED FRESH</span>
+                            </div>
+                        </div>
+
+                        <!-- Ticket Mágico Promo -->
+                        <div class="bg-red-50 border border-red-100 p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div>
+                                <h4 class="font-black text-base text-[#9b2226]">THE MAGICAL TICKET</h4>
+                                <p class="text-xs text-gray-600 mt-1">Add 3 reminders in your account. Win offers worth Rs. 750</p>
+                            </div>
+                            <button class="bg-[#9b2226] text-white font-bold px-5 py-2.5 rounded-full text-xs whitespace-nowrap hover:bg-red-800 transition-all">UNLOCK NOW</button>
+                        </div>
+                    </div>
+
+                    <!-- Derecha: Galería de Fotos Cuadradas -->
+                    <div class="grid grid-cols-3 gap-3">
+                        <img src="img/5.png" class="w-full h-28 object-cover rounded-xl shadow-sm">
+                        <img src="img/6.png" class="w-full h-28 object-cover rounded-xl shadow-sm">
+                        <img src="img/7.png" class="w-full h-28 object-cover rounded-xl shadow-sm">
+                        <img src="img/8.png" class="w-full h-28 object-cover rounded-xl shadow-sm">
+                        <img src="img/5.png" class="w-full h-28 object-cover rounded-xl shadow-sm">
+                        <img src="img/6.png" class="w-full h-28 object-cover rounded-xl shadow-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. BANNER INFERIOR CERTIFICADO -->
+        <section class="w-full py-10 px-6 bg-[#9b2226] text-white text-center">
+            <h3 class="text-lg md:text-2xl font-black tracking-wide">Dakingo – Your Trusted FSSAI Certified Online Bakery for Every Celebration</h3>
+        </section>
+
+    </main>
+
+    <!-- 6. FOOTER ANCHO TOTAL -->
+    <footer class="w-full bg-white border-t border-gray-200 py-12 px-6 md:px-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 text-xs">
+            <div>
+                <h4 class="font-black text-sm text-[#9b2226] mb-3">Dakingo</h4>
+                <ul class="space-y-2 text-gray-500">
+                    <li><a href="#" class="hover:text-slate-800">Our Story</a></li>
+                    <li><a href="#" class="hover:text-slate-800">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-slate-800">Locations</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-3 uppercase tracking-wider">Know Us</h4>
+                <ul class="space-y-2 text-gray-500">
+                    <li><a href="#" class="hover:text-slate-800">About Us</a></li>
+                    <li><a href="#" class="hover:text-slate-800">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-3 uppercase tracking-wider">Need Help</h4>
+                <ul class="space-y-2 text-gray-500">
+                    <li><a href="#" class="hover:text-slate-800">Cancellation & Refund</a></li>
+                    <li><a href="#" class="hover:text-slate-800">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-slate-900 mb-3 uppercase tracking-wider">More Info</h4>
+                <ul class="space-y-2 text-gray-500">
+                    <li><a href="#" class="hover:text-slate-800">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:text-slate-800">Customer Care</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter Suscripción -->
+            <div class="md:col-span-1">
+                <h4 class="font-bold text-slate-900 mb-3 uppercase tracking-wider">Newsletter</h4>
+                <div class="flex flex-col gap-2">
+                    <input type="email" placeholder="Enter Email Address" class="px-4 py-2 border border-gray-300 rounded-full text-xs focus:outline-none focus:border-[#9b2226]">
+                    <button class="bg-[#9b2226] text-white font-bold py-2 rounded-full hover:bg-red-800 transition-all">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inicializar Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
